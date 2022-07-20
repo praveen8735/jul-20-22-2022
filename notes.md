@@ -16,7 +16,10 @@ go build hello.go
 
 * https://pkg.go.dev/std
 
+### Data types
 
+* var variableName type
+* All local variables MUST be used
 
 
 
