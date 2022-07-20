@@ -26,6 +26,8 @@ go build hello.go
 ### Conditionals
 
 * if-else paranthesis is not required
+* curly braces are mandatory
+
 ```
 if y := 10; y%2 == 0 {
 
@@ -36,7 +38,6 @@ if y := 10; y%2 == 0 {
 ```
     case "Saturday", "Sunday":
 ```
-
 
 
 

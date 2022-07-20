@@ -6,6 +6,9 @@ var globalVar int
 
 func main() {
 	x := 10
+	// if x > 10
+	// 	fmt.Println("gt 10")
+
 	if x%2 == 0 { //Paranthesis is not required in if-else
 		fmt.Println("Even")
 	} else {
