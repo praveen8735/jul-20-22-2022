@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 var globalVar int
 
@@ -8,6 +12,15 @@ func main() {
 	x := 10
 	// if x > 10
 	// 	fmt.Println("gt 10")
+
+	rand.Seed(time.Now().UnixNano())
+	if x > 10 {
+
+	} else if x > 10 {
+
+	} else {
+
+	}
 
 	if x%2 == 0 { //Paranthesis is not required in if-else
 		fmt.Println("Even")
