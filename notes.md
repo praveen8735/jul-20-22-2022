@@ -8,3 +8,22 @@
 * data defined as structs and functions
 * pointers in Go; but no pointer arithmetics
 * Latest version is 1.18
+
+``` 
+go run hello.go
+go build hello.go
+```
+
+* https://pkg.go.dev/std
+
+
+
+
+
+
+
+
+
+
+
+
