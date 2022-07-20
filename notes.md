@@ -20,9 +20,22 @@ go build hello.go
 
 * var variableName type
 * All local variables MUST be used
+* := is the shortcut declaration
+* You cannot use := for global variables
 
+### Conditionals
 
+* if-else paranthesis is not required
+```
+if y := 10; y%2 == 0 {
 
+}
+```
+* switch-case
+
+```
+    case "Saturday", "Sunday":
+```
 
 
 

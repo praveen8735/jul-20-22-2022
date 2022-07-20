@@ -12,7 +12,7 @@ const (
 	FALSE bool = false
 )
 
-//state := "KA"
+//state := "KA" //ERROR
 
 func main() {
 	/*
