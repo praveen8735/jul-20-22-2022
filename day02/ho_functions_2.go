@@ -12,7 +12,7 @@ func main() {
 	var multiply = func(x int, y int) int {
 		return x * y
 	}
-	var square = func(x int) int { return x * x }
+	//var square = func(x int) int { return x * x }
 	//doSomeMath(square)
 	doSomeMath(add)
 	doSomeMath(sub)
