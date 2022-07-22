@@ -20,6 +20,9 @@ func talkToDB()  {
 		fmt.Println("Close the connection to DB")
 		connOpen = false
 	}()
+	if connOpen {
+		connOpen = false
+	}
 	fmt.Println("Execute queries")
 
 }
