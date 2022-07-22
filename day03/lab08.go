@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"sync"
 )
@@ -29,11 +29,12 @@ func main()  {
 
 func generateJson() {
 	contents, _ := json.Marshal(stockList)
-	fmt.Println(string(contents))
+	log.Println(string(contents))
 }
 
 func getCurrentMarketPriceFromServer(symbol string) {
 	url := baseUrl + symbol
+	log.Println("Fetching data for " + symbol + " ...")
 	response, _ := http.Get(url)
 	output, _ := ioutil.ReadAll(response.Body)
 	defer func() {
