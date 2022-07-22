@@ -29,10 +29,6 @@ func main()  {
 	printStockJson()
 }
 
-func printStockJson() {
-	contents, _ := json.Marshal(stockList)
-	log.Println(string(contents))
-}
 
 func getCurrentMarketPriceFromServer(symbol string) {
 	url := baseUrl + symbol
@@ -45,6 +41,7 @@ func getCurrentMarketPriceFromServer(symbol string) {
 	stockOutputChannel <- output
 
 }
+
 func processJsonOutput() {
 	for len(stockList) != len(symbols) {
 		jsonOutput := <- stockOutputChannel
@@ -54,4 +51,9 @@ func processJsonOutput() {
 		stockList = append(stockList, stock)
 		wg.Done()
 	}
+}
+
+func printStockJson() {
+	contents, _ := json.Marshal(stockList)
+	log.Println(string(contents))
 }
