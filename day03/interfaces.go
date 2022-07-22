@@ -10,7 +10,16 @@ type Truck struct {
 }
 type Vehicle interface {
 	printInfo()
+	loadFastTagDetails()
 }
+func (c Car) loadFastTagDetails() {
+	fmt.Println("Loading fast tag details for " + c.model)
+}
+
+func (t Truck) loadFastTagDetails() {
+	fmt.Println("Loading fast tag details for truck")
+}
+
 func (c Car) printInfo() {	//class Car implements Vehicle { printInfo(...) }
 	fmt.Println("Car", c.model)
 }
@@ -30,6 +39,7 @@ func main() {
 }
 
 func toll(v Vehicle) {
+	v.loadFastTagDetails()
 	v.printInfo()
 }
 
