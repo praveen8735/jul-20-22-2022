@@ -29,7 +29,6 @@ func main()  {
 	printStockJson()
 }
 
-
 func getCurrentMarketPriceFromServer(symbol string) {
 	url := baseUrl + symbol
 	log.Println("Fetching data for " + symbol + " ...")
