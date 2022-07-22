@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func main() {
+	x := 1 //var x = 1
+	x++
+
 	buttonClicked := getButtonClickedFunc()
 	numberOfTimes := buttonClicked()
 	numberOfTimes = buttonClicked()
