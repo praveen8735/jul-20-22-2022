@@ -17,6 +17,10 @@ type Shape interface {
 	area() int
 }
 
+type Figure interface {
+	area() int
+}
+
 func (s Square) area() int{
 	return s.side * s.side
 }
@@ -35,6 +39,9 @@ func main() {
 
 	var shapesList []Shape = []Shape{c1, sq1, rect}
 	fmt.Println(shapesList)
+
+	var shapesList2 []Figure = []Figure{c1, sq1, rect}
+	fmt.Println(shapesList2)
 
 	//var shapesList []Circle = []Circle { c1, sq1}
 	//var shapesList2 []Square = []Square { c1, sq1}
